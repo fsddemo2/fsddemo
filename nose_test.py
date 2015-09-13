@@ -1,4 +1,4 @@
-from fibo import fibonacci_iter, fibonacci_rec
+from fibo import fibonacci_iter, fibonacci_rec, fibo_iter_call
 
 def test_fibo():
    """
@@ -24,4 +24,5 @@ def test_fibo():
    for x in range(1,15):
        assert fibonacci_iter(x) == resultados[x]
        assert fibonacci_rec(x) == resultados[x]
+       assert fibo_iter_call(x) == resultados[x]
      
