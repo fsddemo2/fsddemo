@@ -27,7 +27,7 @@ def fibo_iter_call(n):
     f=fibo_iter()
     result = 1
     for x in range(n):
-        result = f.next()
+        result = next(f)
     return result
 
 if __name__ == "__main__":
