@@ -14,5 +14,5 @@ def fibonacci_rec(n):
 
 
 if __name__ == "__main__":
-    print fibonacci_iter(5)
-    print fibonacci_rec(6)
+    print (fibonacci_iter(5))
+    print (fibonacci_rec(6))
