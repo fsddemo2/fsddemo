@@ -30,7 +30,18 @@ def fibo_iter_call(n):
         result = next(f)
     return result
 
+def memoize(fn, arg):
+ memo = {}
+ if arg not in memo:
+  memo[arg] = fn(arg)
+  return memo[arg]
+ 
+## fib() as written in example 1.
+def get_memoize(n):
+    return memoize(fibonacci_iter,n)
+
 if __name__ == "__main__":
     print (fibonacci_iter(5))
     print (fibonacci_rec(6))
     print (fibo_iter_call(7))
+    print (get_memoize(8))
